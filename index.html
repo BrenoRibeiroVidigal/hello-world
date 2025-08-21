@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nyan Cat</title>
+  <style>
+    :root { --bg:#0b1023; }
+    html,body { height:100%; margin:0; }
+    body {
+      display:grid; place-items:center;
+      background: radial-gradient(1200px 700px at 50% -20%, #1c244a, var(--bg));
+      font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:#fff;
+    }
+    .card {
+      text-align:center; padding:24px 28px;
+      background: rgba(255,255,255,.06);
+      border-radius:16px; backdrop-filter: blur(6px);
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    img { 
+      width:min(90vw, 480px); height:auto;
+      image-rendering: pixelated;
+      border-radius:12px;
+    }
+    small { opacity:.8; display:block; margin-top:10px; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>🐱🌈 Nyan Cat</h1>
+    <!-- GIF animado do Nyan Cat -->
+    <img
+      src="https://media.giphy.com/media/sIIhZliB2McAo/giphy.gif"
+      alt="Nyan Cat animado voando com rastro arco-íris"
+      loading="eager"
+      draggable="false"
+    />
+    <small>Se preferir usar um arquivo local, baixe um GIF e troque o <code>src</code> por algo como <code>nyan.gif</code>.</small>
+  </main>
+</body>
+</html>
